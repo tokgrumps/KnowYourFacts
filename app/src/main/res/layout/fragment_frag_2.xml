@@ -1,0 +1,55 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="sg.edu.rp.webservices.knowyourfacts.Frag_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <android.support.v7.widget.CardView
+            cardElevation="7dp"
+            cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:id="@+id/card2"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/content"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:typeface="normal"
+                    android:paddingBottom="20dp"/>
+
+                <Button
+                    android:id="@+id/color2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorPrimary"
+                    android:text="Change Color"
+                    android:padding="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/cardview_light_background"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</FrameLayout>
